@@ -1,0 +1,25 @@
+@layer utilities {
+  .h-dynamic {
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .min-h-dynamic {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .page-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: clamp(3rem, 10vh, 6rem);
+  }
+
+  .page-content {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 4vw, 2rem);
+  }
+}

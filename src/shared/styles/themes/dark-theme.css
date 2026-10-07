@@ -1,0 +1,16 @@
+[data-theme='dark'] {
+  /* backgrounds */
+  --bg-default: #0B0C10;
+  --bg-muted: #12131A;
+
+  /* surfaces */
+  --surface-default: #12131A;
+  --surface-elevated: #181A24;
+
+  /* text */
+  --fg-primary: #EDEFF6;
+  --fg-secondary: #9CA0B3;
+
+  /* borders */
+  --border-default: #23253A;
+}

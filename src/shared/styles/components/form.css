@@ -1,0 +1,19 @@
+@layer components {
+  .ui-hint {
+    @apply min-h-4 
+		text-xs 
+		leading-tight
+		text-fg-secondary;
+  }
+
+  .ui-hint--error {
+    @apply text-fg-error;
+  }
+
+  .ui-field {
+    @apply flex 
+		flex-col 
+		gap-1
+    w-full;
+  }
+}

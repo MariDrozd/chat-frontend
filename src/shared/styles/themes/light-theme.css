@@ -1,0 +1,16 @@
+[data-theme='light'] {
+  /* backgrounds */
+  --bg-default: #F6F7FB;
+  --bg-muted: #ECEEF5;
+
+  /* surfaces */
+  --surface-default: #FFFFFF;
+  --surface-elevated: #F1F3FA;
+
+  /* text */
+  --fg-primary: #14151C;
+  --fg-secondary: #5E6278;
+
+  /* borders */
+  --border-default: #D6D9E6;
+}

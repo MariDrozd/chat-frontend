@@ -1,0 +1,43 @@
+@layer components {
+  .ui-input {
+    @apply h-10 w-full px-3
+      rounded-sm
+      bg-surface-default
+      border border-border-default
+      text-fg-primary
+      placeholder:text-fg-secondary/60
+      transition;
+  }
+
+  .ui-input:focus-visible {
+    @apply outline-none
+    ring-1
+    ring-(--ring-focus)
+    ring-offset-1
+    ring-offset-bg-default;
+  }
+
+  .ui-input:disabled {
+    @apply opacity-50
+    pointer-events-none;
+  }
+
+  .ui-input--error {
+    @apply border-accent-danger;
+  }
+
+  .ui-input--error:focus-visible {
+    @apply border-border-default 
+    ring-(--ring-error);
+  }
+
+  .ui-input:-webkit-autofill,
+  .ui-input:-webkit-autofill:hover,
+  .ui-input:-webkit-autofill:focus,
+  .ui-input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px var(--surface-default) inset;
+    -webkit-text-fill-color: var(--fg-primary);
+    caret-color: var(--fg-primary);
+    transition: background-color 9999s ease-in-out 0s;
+  }
+}

@@ -1,0 +1,99 @@
+#passwordreset-tab,
+#chatrooms,
+.dropdown--contacts,
+.block-user,
+#edit-tabpanel .btn-danger {
+  display: none !important;
+}
+
+.messengerShell {
+  isolation: isolate;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+
+  --cb-min: 200px;
+  --cb-max: 300px;
+  --chat-min: 300px;
+}
+
+.messengerShell #conversejs .converse-chatboxes {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  min-width: calc(var(--cb-min) + var(--chat-min)) !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.messengerShell #conversejs converse-controlbox#controlbox.chatbox.col-auto {
+  flex: 0 1 clamp(var(--cb-min), 28vw, var(--cb-max)) !important;
+  width: clamp(var(--cb-min), 28vw, var(--cb-max)) !important;
+  min-width: var(--cb-min) !important;
+  max-width: var(--cb-max) !important;
+
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.messengerShell #conversejs converse-chat.chatbox.col-auto {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: var(--chat-min) !important;
+  max-width: 100% !important;
+
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.messengerShell #conversejs .chatbox > .flyout.box-flyout {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.messengerShell #conversejs,
+.messengerShell #conversejs * {
+  box-sizing: border-box;
+  min-width: 0;
+  font-family: inherit !important;
+}
+
+.messengerShell #conversejs form.chat-message-form,
+.messengerShell #conversejs textarea.chat-textarea,
+.messengerShell #conversejs .bottom-panel,
+.messengerShell #conversejs .chat-body,
+.messengerShell #conversejs .chat-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.messengerShell #conversejs converse-brand-logo {
+  display: none !important;
+}
+
+.messengerShell #conversejs {
+  --chat-color: rgba(var(--accent-primary-rgb) / 0.6);
+  --chat-link-color: var(--accent-secondary);
+
+  --background-color: var(--bg-default);
+  --chatroom-head-color: var(--surface-elevated);
+
+  --text-color: var(--fg-primary);
+  --muted-color: var(--fg-secondary);
+
+  --border-color: var(--border-default);
+
+  --highlight-color: rgba(var(--accent-secondary-rgb) / 0.9);
+}

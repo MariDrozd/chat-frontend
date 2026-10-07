@@ -1,0 +1,38 @@
+:root {
+  /* backgrounds */
+  --bg-default: #f6f7fb;
+  --bg-muted: #eceef5;
+
+  /* surfaces */
+  --surface-default: #ffffff;
+  --surface-elevated: #f1f3fa;
+
+  /* text */
+  --fg-primary: #14151c;
+  --fg-secondary: #5e6278;
+  --fg-error: #c71585;
+
+  /* borders */
+  --border-default: #d6d9e6;
+
+  --accent-primary: #7c5cff;
+  --accent-secondary: #4de7ff;
+  --accent-danger: #ee82ee;
+
+  /* RGB для glow */
+  --accent-primary-rgb: 124 92 255;
+  --accent-secondary-rgb: 77 231 255;
+  --accent-danger-rgb: 238 130 238;
+
+  /* focus & glow */
+  --ring-focus: rgb(var(--accent-secondary-rgb) / 0.55);
+
+  --glow-primary-soft: rgb(var(--accent-primary-rgb) / 0.12);
+  --glow-primary-strong: rgb(var(--accent-primary-rgb) / 0.24);
+
+  --gradient-accent: linear-gradient(
+    to right,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+}
